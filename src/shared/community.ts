@@ -16,6 +16,7 @@ export const CONTRIBUTORS = [
   {id:'kelierandes-github',label:'GitHub 主页',url:'https://github.com/KelierAndes'},
   {id:'kelierandes-pr3',label:'PR #3',url:'https://github.com/NecoAya/VRCAL-VRChat-Asset-Library/pull/3'},
  ]},
+ {handle:'claude',name:'Claude',initials:'C',role:'AI 辅助：自定义 AI 服务商功能实现、测试与文档（非人工贡献者）',links:[]},
 ] as const satisfies readonly Contributor[];
 export function communityUrl(id:unknown):string {
  if(typeof id!=='string'||id.length>100)throw new Error('社区链接无效。');
